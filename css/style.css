@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+:root{
+    /* FONTES DO SITE */
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: "Lilita One", sans-serif;
+    --font-poema: "Caveat", sans-serif;
+
+    /* PALETA DE CORES */
+    --cor0: #2E4D7B;
+    --cor1: #F2F2F2;
+    --cor2: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-padrao);
+}
+
+body{
+    background-color: var(--cor1);
+    min-height: 100vh;
+}
+
+/* -------- HEADER -------- */
+header{
+    background-color: var(--cor0);
+    color:var(--cor1);
+    text-align: center;
+    padding: 1.2rem;
+}
+
+header > h1{
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    text-shadow: 2px 2px 1px black;
+    font-size: 3rem;
+    font-variant: small-caps; /* Torna as letras iniciais de cada palavra para maiúsculas */   
+}
+
+header a{
+    font-size: 1.1rem;
+    color: rgb(103, 255, 123);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    transition-duration: 0.3s;
+}
+
+header a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+
+header a:active{
+    color: red;
+}
+
+/* -------- SECTION  -------- */
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 3rem;
+}
+
+section p{
+    font-family: var(--font-poema);
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+section.normal{
+    background-color: var(--cor1);
+}
+
+section.normal p{
+    padding-bottom: 1.2rem;
+}
+
+section.imagem {
+    background-color: var(--cor0);
+    color: var(--cor1);
+    box-shadow: inset 6px 6px 13px 6px rgba(0, 0, 0, 0.357);
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.508);
+    width: 350px;
+    padding: 1rem 1.2rem;
+    text-shadow: 1px 1px 0px black;
+    border-radius: 2px;
+}
+
+/* Imagem 1 */
+section#img01{
+    background-image: url('../img/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+/* Imagem 2 */
+section#img02{
+    background-image: url('../img/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+/* -------- FOOTER -------- */
+footer{
+    background-color: var(--cor0);
+    padding: 0.8rem;
+    text-align: center;
+    color:var(--cor1);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(103, 255, 123);
+    padding: 0.2rem;
+    transition: background-color 0.2s ease;
+}
+
+footer a:hover{
+    color: yellow;
+    background-color: chocolate;
+    border-radius: 2px;
+}
+
+footer a:active{
+    color: red;
+}
